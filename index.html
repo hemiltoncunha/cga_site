@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro de Geociências Aplicadas (CGA)</title>
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero" id="inicio">
+    <div class="container nav">
+      <div class="brand">
+        <img alt="Logo SGB" src="img/Marca_SGB_horizontal_branca+simboloColorido.png" />
+      </div>
+      <nav class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#equipe">Equipe</a>
+      </nav>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <h1>Geociências aplicadas para pesquisa, inovação e desenvolvimento</h1>
+        <p>O CGA integra competências em geociências, dados, laboratório e inovação para apoiar projetos estratégicos, gerar conhecimento aplicado e fortalecer a atuação científica e tecnológica do SGB.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#sobre">Conheça o CGA</a>
+          <a class="btn secondary" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="homePage">
+    <section id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <h2>Sobre o CGA</h2>
+          <p>Seção horizontal com duas colunas, preservando a leitura institucional do layout original e ampliando a área de conteúdo para apresentação do centro.</p>
+        </div>
+        <div class="sobre-grid">
+          <div class="copy-card">
+            <p>O <strong>Centro de Geociências Aplicadas (CGA)</strong> reúne infraestrutura, conhecimento técnico e capacidade de integração para desenvolver soluções em geociências voltadas à pesquisa, ao desenvolvimento tecnológico e à inovação.</p>
+            <ul>
+              <li>Integra projetos de P&amp;D com foco em dados, laboratório, território e recursos naturais.</li>
+              <li>Apoia a produção científica e a transformação de conhecimento em soluções aplicadas.</li>
+              <li>Fortalece conexões entre pesquisa básica, aplicações operacionais e cooperação institucional.</li>
+            </ul>
+          </div>
+          <div class="image-card">
+            <div class="image-placeholder" aria-label="Imagem ilustrativa de geociências e inovação"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-blue" id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projetos de P&amp;D</h2>
+          <p>Carrossel com todos os projetos de P&amp;D do CGA. Clique em um cartão para acessar a página dedicada do projeto.</p>
+        </div>
+
+        <div class="carousel project-carousel" data-visible="3">
+          <button class="carousel-btn prev" aria-label="Projetos anteriores">‹</button>
+          <div class="carousel-track-wrap">
+            <div class="carousel-track" id="projectTrack"></div>
+          </div>
+          <button class="carousel-btn next" aria-label="Próximos projetos">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="publicacoes">
+      <div class="container">
+        <div class="section-head">
+          <h2>Publicações</h2>
+          <p>Cartas horizontais em linhas, com imagem vertical 9:16 à esquerda, espaçamento entre os itens e prévia do conteúdo científico.</p>
+        </div>
+
+        <div class="publicacoes-grid" id="publicationList"></div>
+        <div class="section-actions">
+          <a class="btn primary" href="publicacoes.html">Ver todas as publicações</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="parceiros">
+      <div class="container">
+        <div class="section-head">
+          <h2>Parceiros</h2>
+          <p>Carrossel apenas com logos, sem cartões de fundo, mantendo o destaque visual limpo e institucional.</p>
+        </div>
+
+        <!-- Substituído: carrossel removido, imagem institucional única no lugar -->
+        <div class="partners-hero" style="display:flex;justify-content:center;align-items:center;padding:36px 0;">
+          <img src="img/Regua_MCTER.png" alt="Regua MCTER" style="max-width:100%;height:auto;display:block;">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="team-wrap" id="equipe">
+      <div class="container">
+        <div class="section-head">
+          <h2>A equipe</h2>
+          <p>Estrutura inspirada no arquivo enviado, com dois blocos de equipe, avatares circulares e hierarquia visual semelhante ao layout original.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-group">
+            <h3>Pesquisadores do CGA</h3>
+            <div class="members" id="researchTeam"></div>
+          </div>
+          <div class="team-group">
+            <h3>Apoio laboratorial e administrativo</h3>
+            <div class="members support" id="supportTeam"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main class="hidden-page container page-block" id="allPublicationsPage">
+    <a href="#publicacoes" class="back-link" id="backToHome">← Voltar para a página inicial</a>
+    <div class="section-head">
+      <h2>Todas as publicações</h2>
+      <p>Página dedicada de publicações exibida dentro do mesmo arquivo HTML, com a coleção completa em formato de cartas.</p>
+    </div>
+    <div class="publicacoes-grid" id="allPublicationsGrid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <img alt="Logos institucionais" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAB9CAIAAABGeJqdAAAs6ElEQVR4nO29eZBcx3ng+X15vKPO7q4+eTMa0CAMgED9Q0v2FkCI5WbhLo5ne5q2s0kz6/Z0P8z3xW4y2Y6dTGOZjtvtbLPbZl5sO/1OsoxmycszvSltS7KLSdEqytpSUhLtJVlJJMlyIsmXJdlJ8pAUKRIkSIhERmMMA2AAGqCquru7q7qrzMzh4e7hy02aNBki+6vqnN7zvM85T1XV1VPVPdX1zQAAIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCEi4v8E33xnQ9l1A2QAAAAASUVORK5CYII=" />
+      <span>Centro de Geociências Aplicadas (CGA)</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="detailOverlay" aria-hidden="true">
+    <div class="detail-card">
+      <button class="close-detail" aria-label="Fechar">×</button>
+      <div class="detail-layout">
+        <div class="detail-cover" id="detailCover"></div>
+        <div class="detail-copy">
+          <h3 id="detailTitle"></h3>
+          <p class="meta" id="detailMeta"></p>
+          <p id="detailAbstract"></p>
+          <a class="detail-link" id="detailLink" href="#" target="_blank" rel="noopener noreferrer">Acessar conteúdo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js" defer></script>
+</body>
+</html>
