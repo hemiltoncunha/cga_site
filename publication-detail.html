@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Publicação — Exemplo — CGA</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* estilos locais mínimos para garantir legibilidade abaixo do header */
+    .publication-page{ color:var(--texto,#1d2b3f); background:#fff; padding:48px 0; }
+    .pub-title{ font-size:32px; margin:0 0 8px; font-weight:900; color:var(--texto,#1d2b3f); }
+    .pub-meta{ color:#55708f; margin-bottom:18px; font-weight:700; }
+    .pub-abstract{ background:#fff; padding:20px; border-radius:12px; box-shadow:var(--sombra); color:#2d3f4f; line-height:1.7; }
+    .pub-actions{ margin-top:16px; display:flex; gap:12px; flex-wrap:wrap; }
+    .pub-section{ margin-top:28px; }
+    .back-link{ display:inline-flex; gap:8px; align-items:center; font-weight:700; color:#0d63b1; margin-bottom:18px; }
+    @media (max-width:900px){ .container { padding:0 12px; } }
+  </style>
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="container nav">
+      <div class="brand">
+        <img alt="Logo SGB" src="img/Marca_SGB_horizontal_branca+simboloColorido.png" />
+      </div>
+      <nav class="nav-links">
+        <a href="cga_site.html" class="nav-home">Home</a>
+      </nav>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <h1>Geociências aplicadas para pesquisa, inovação e desenvolvimento</h1>
+        <p>O CGA integra competências em geociências, dados, laboratório e inovação para apoiar projetos estratégicos, gerar conhecimento aplicado e fortalecer a atuação científica e tecnológica do SGB.</p>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="publication-page">
+    <div class="container">
+      <a class="back-link" href="cga_site.html#publicacoes">← Voltar para Publicações</a>
+
+      <h1 class="pub-title">Exemplo de Título de Publicação: Avaliação de Recursos Geológicos</h1>
+      <div class="pub-meta">Autores: Fulano A., Ciclano B. • Periódico: Revista Exemplo • 2026 • DOI: 10.0000/exemplo</div>
+
+      <div class="pub-abstract">
+        <strong>Resumo</strong>
+        <p>Resumo breve da publicação — objetivo, métodos, principais resultados e conclusões. Este parágrafo deve sintetizar a contribuição científica e a aplicabilidade dos resultados.</p>
+
+       <!--<div class="pub-actions">
+          <a class="btn primary" href="files/publicacao_exemplo.pdf" target="_blank" rel="noopener">Baixar PDF</a>
+          <a class="btn secondary" href="#" aria-label="Ver dados suplementares">Dados suplementares</a>
+          <a class="btn" href="#" aria-label="Citar">Citar (APA)</a>
+        </div>
+      </div>
+    
+
+      <article class="pub-section">
+        <h2>Introdução</h2>
+        <p>Texto de exemplo da introdução. Contextualize o problema, referencie trabalhos relevantes e apresente a hipótese.</p>
+      </article>
+
+      <article class="pub-section">
+        <h2>Metodologia</h2>
+        <p>Descrição resumida dos métodos utilizados, materiais, amostragem e procedimentos analíticos.</p>
+      </article>
+
+      <article class="pub-section">
+        <h2>Resultados e Discussão</h2>
+        <p>Resumo dos resultados principais e discussão de implicações.</p>
+      </article>
+
+      <article class="pub-section">
+        <h2>Conclusões</h2>
+        <p>Pontos principais a serem destacados e perspectivas para trabalhos futuros.</p>
+      </article>
+
+      <div class="pub-section">
+        <h3>Palavras-chave</h3>
+        <p>geociências, recursos, análise laboratorial</p>
+      </div>
+
+      <div class="pub-section">
+        <h3>Projetos relacionados</h3>
+        <ul>
+          <li><a href="centro-referencia-geociencias.html">Centro de Referência em Geociências</a></li>
+          <li><a href="revitalizacao-museu.html">Revitalização do Museu de Ciências da Terra</a></li>
+          <li><a href="rede-sgb-pd-caete.html">Rede SGB de P&D — Unidade Caeté</a></li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </main>
+
+  <footer class="site-footer" style="margin-top:36px">
+    <div class="container footer-bar">
+      <span>Centro de Geociências Aplicadas (CGA)</span>
+    </div>
+  </footer>
+
+  <script>
+    // pequena melhoria: links de voltar abrem a seção correta se a página inicial estiver aberta
+    document.querySelectorAll('.back-link').forEach(a=>{
+      a.addEventListener('click', e=>{
+        // deixa o comportamento normal (navegar para cga_site.html#publicacoes)
+      });
+    });
+  </script>
+</body>
+</html>
