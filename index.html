@@ -91,16 +91,21 @@
 
     <section id="parceiros">
       <div class="container">
-        <div class="section-head">
+        <div class="partners-hero">
+          <img src="img/Regua_MCTER.png" alt="Regua MCTER">
+        </div>
+
+        <div class="section-head partners-title">
           <h2>Parceiros</h2>
-          
         </div>
 
-        <!-- Substituído: carrossel removido, imagem institucional única no lugar -->
-        <div class="partners-hero" style="display:flex;justify-content:center;align-items:center;padding:36px 0;">
-          <img src="img/Regua_MCTER.png" alt="Regua MCTER" style="max-width:100%;height:auto;display:block;">
+        <div class="carousel partners-carousel" aria-label="Carrossel de parceiros">
+          <button class="carousel-btn prev" type="button" aria-label="Parceiros anteriores">‹</button>
+          <div class="carousel-track-wrap">
+            <div class="carousel-track" id="partnerTrack"></div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Próximos parceiros">›</button>
         </div>
-
       </div>
     </section>
 
